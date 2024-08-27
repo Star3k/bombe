@@ -1,0 +1,66 @@
+<!-- Declaración del tipo de documento (DOCTYPE) -->
+<!DOCTYPE html>
+
+<!-- Elemento raíz del documento HTML -->
+<html lang="es">
+
+  <!-- Cabecera del documento (head) -->
+  <head>
+       <meta charset="UTF-8">
+        <!-- Configuración de la visualización en dispositivos móviles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+       <!-- Título del documento (se muestra en la pestaña del navegador) -->
+    <title>Nigma</title>
+  </head>
+
+  <!-- Cuerpo del documento (body) -->
+  <body>
+    <!-- Aquí va el contenido del documento -->
+      <!-- Clase Contenedor, para que sea mas fácil manejar el estilo del bloque -->
+     <div class="contenedor">
+     <header>
+       <!-- Logo de Alura a la Izquierda -->
+        <img class="logo" src="/Images/logoalura.png" alt="logo de Alura Latam" >
+     </header>
+      <!-- Clase presentacion, para que sea mas fácil manejar el estilo del bloque -->
+     <main class="presentacion">
+        <section>
+          <!-- Se llama Bombe, por la máquina de Alan Turing -->
+          <h1 class="titulo">Bienvenido a Bombe</h1>
+          <!-- Área de texto donde escribiremos -->
+            <textarea class="text_Enc" id="textoencriptado" cols="30" rows="10" placeholder="Ingrese Texto Aquí para iniciar la máquina"></textarea>
+            <!-- clase ordenar para organizar el resposive -->
+            <div class="ordenar">
+              <!-- signo de información -->
+              <img class="ad" src="/Images/ad.png" alt="sigo de información" >
+              <!-- información de uso de texto-->
+              <h6 class="info">Sólo letras minúsculas y sin acento.</h6>
+            </div>
+            <!-- botones encriptar y desencriptar-->
+            <div class="botones">
+              <button class="boton_enc" onclick="botonEnc()">Encriptar</button>
+              <button class="boton_des" onclick="botonDes()">Desencriptar</button>
+            </div>
+            
+        </section>
+        <section>
+          <!-- área de texto donde se encripta o desencripta-->
+            <textarea class="encrip" cols="10" rows="10" placeholder="Ningún mensaje ha sido desencriptado"></textarea>
+            <div>
+              <!-- boton copiar-->
+                <button class="copiar" id="botoncopia" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+        
+     </main>
+     
+    </div>
+  </body>
+  <!--conexión con el script de JS-->
+  <script src="/script.js"></script>
+</html>

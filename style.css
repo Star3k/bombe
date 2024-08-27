@@ -1,0 +1,298 @@
+
+/*-- Estilo de la página-->*/
+*{  background-color: #0f0f0f;
+    font-family: 'Orbitron';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;    
+    color: white;}
+
+/*-- Estilo Main-->*/
+main{
+    display: flex;
+    margin-bottom: 50%;
+    margin-left: 10%;}
+
+/*-- Estilo del título */
+.titulo{
+   font-family: 'Orbitron';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 5%;    
+    color: white;}
+
+/*-- Estilo del logo de Alura-->*/
+.logo{
+    padding-top: 2%;
+    margin-left: 2%;
+    width: 6%
+}
+
+/*-- Estilo del área de ingreso texto-->*/
+.text_Enc{
+    background-image: url(/Images/back.png);
+    background-size: cover;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    1px 1px 0 #000000,
+    -1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000;
+    margin-top: 35px;
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    outline: none;
+    width: 100%;
+}
+
+/*-- Estilo del área de info encriptado o desencriptado-->*/
+.encrip {
+    background-image: url(/Images/enc.png);
+    color: rgb(255, 255, 255);    
+    text-shadow:
+    1px 1px 0 #000000,
+    -1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000;
+    font-size: 0.9rem;        
+    margin-top: 92px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-radius: 24px;
+    width: 20%;
+    position: absolute;}
+    
+/*-- Estilo del texto de uso-->*/
+.info{
+    margin-top: 1px;
+    color: white;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+    font-size: 0.5rem;
+    width: 80%;
+}
+.ad{
+  padding-top: 0%;
+  
+  margin-left: 0%;
+  height: 2.5%;
+  width: 2.5%}
+
+/*-- Estilo de los botones-->*/
+.botones{
+    display: flex;
+    margin-top: 10%;
+    justify-content: left;
+    gap: 3%;
+    padding: 0% 10%;
+    }
+
+.ordenar{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+  }
+
+.boton_enc{
+    background-color: #000000;
+    background-size: cover;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 10%;
+    border: 1px solid #4b4444;
+    cursor: pointer;
+    width: 35%;
+}
+
+.boton_des{
+    background-color: #1b1717;
+    background-size: cover;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 10%;
+    border: 1px solid #4b4444;
+    cursor: pointer;
+    width: 35%;}
+
+.copiar{
+    font-size: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #4b4444;
+    cursor: pointer;
+    margin-left: 7%;
+    margin-top: 29%;
+    width:10%;
+    position: absolute;}
+
+/*-- Estilo responsivo-->*/
+  @media (min-width: 0px) and (max-width: 768px) {
+    main {
+      flex-direction: column;
+      margin-bottom: 15%;
+      margin-left: 10%;
+      width: auto;
+    }
+    .logo {
+      padding-top: 3%;
+      margin-left: 3%;
+      width: auto;
+    }
+    .text_Enc {
+      font-size: 1.1rem;
+      margin-top: 25px;
+      width: auto;
+    }
+    .encrip {
+      font-size: 1.1rem;
+      margin-top: 25px;
+      margin-left: 5px;
+      padding-left: 15px;
+      width: 70%;
+    }
+
+
+
+  
+    .info {
+      font-size: 0.5rem;
+      width: auto;
+    }
+    .botones {
+      flex-direction: column;
+      margin-top: 10%;
+      padding: 0% 10%;
+      width: auto;
+    }
+    .boton_enc, .boton_des {
+        width: auto;
+      margin-bottom: 10px;
+    }
+    .copiar {
+      font-size: 0.9rem;
+      margin-left: 35%;
+      margin-top: 55%;
+      width: auto;
+    }
+  }
+
+   Pantallas medianas (tabletas) 
+  @media (min-width: 769px) and (max-width: 1024px) {
+    main {
+      flex-direction: column;
+      margin-bottom: 15%;
+      margin-left: 5%;
+      width: auto;
+    }
+    .logo {
+      padding-top: 3%;
+      margin-left: 3%;
+      width: auto;
+    }
+    .text_Enc {
+      font-size: 1.1rem;
+      margin-top: 25px;
+      width: auto;
+    }
+    .encrip {
+      font-size: 1.1rem;
+      margin-top: 25px;
+      margin-left: 5px;
+      padding-left: 15px;
+      width: auto;
+    }
+
+    .ordenar{
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+    }
+
+    .ad{
+        padding-top: 0%;
+        margin-left: 0%;
+        height: 1%;
+        width: 3.5%}
+    .info {
+      font-size: 0.5rem;
+      width: auto;
+    }
+    .botones {
+      flex-direction: row;
+      margin-top: 10%;
+      width: auto;
+      align-items: center;
+    }
+    .boton_enc, .boton_des {
+      width: auto;
+      margin-bottom: 30px;
+     
+    }
+    .copiar {
+      font-size: 0.9rem;
+      margin-left: 35%;
+      margin-top: 55%;
+      width: auto;
+    }
+  }
+  
+   Pantallas grandes (desktops) 
+  @media (min-width: 1025px) {
+    main {
+      flex-direction: row;
+      margin-bottom: 10%;
+      margin-left: 15%;
+    }
+    .logo {
+      padding-top: 2%;
+      margin-left: 2%;
+      width: 6%;
+    }
+    .text_Enc {
+      font-size: 1.2rem;
+      margin-top: 30px;
+    }
+    .encrip {
+      font-size: 1.2rem;
+      margin-top: 30px;
+      margin-left: 20px;
+      padding-left: 20px;
+      width: 20%;
+    }
+
+    .ordenar{
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+    }
+    .ad{
+        padding-top: 0%;
+        margin-left: 0%;
+        height: 1%;
+        width: 3.5%}
+    .info {
+      font-size: 0.7rem;      
+      width: 100%;
+    }
+    .botones {
+      flex-direction: row;
+      margin-top: 15%;
+      padding: 0% 5%;
+    }
+    .boton_enc, .boton_des {
+      width: 45%;
+      margin-bottom: 15px;
+      margin-left: 0%;
+    }
+    .copiar {
+      font-size: 1rem;
+      margin-left: 6.5%;
+      margin-top: 27%;
+      width: 10%;
+    }
+  }
+
+  
