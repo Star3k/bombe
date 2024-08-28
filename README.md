@@ -36,7 +36,7 @@ No se requiere instalación. Simplemente clona el repositorio y abre el archivo 
 
 bash
 Copiar código
-git clone https://github.com/tuusuario/nigma.git
+git clone https://github.com/Star3k/bombe
 cd nigma
 Inspiración
 Este proyecto es un homenaje a Alan Turing, cuyo trabajo en la máquina Bombe no solo cambió el curso de la guerra, sino que también sentó las bases de la computación moderna. A través de Nigma, buscamos recordar la importancia de su legado en la historia de la criptografía y la informática.
